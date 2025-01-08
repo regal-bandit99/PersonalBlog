@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - My Blog</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="/" class="logo">My Blog</a>
+            <div class="nav-links">
+                <a href="/blog">Blog</a>
+                <a href="/about">About</a>
+                <a href="/faq">FAQ</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="blog-list">
+        <h1>Latest Posts</h1>
+        <div class="posts">
+            {{#each posts}}
+            <article class="post-preview">
+                <h2><a href="/blog/{{slug}}">{{title}}</a></h2>
+                <div class="meta">
+                    <time>{{date}}</time>
+                    {{#if author}}<span class="author">By {{author}}</span>{{/if}}
+                </div>
+                <p class="excerpt">{{excerpt}}</p>
+                <a href="/blog/{{slug}}" class="read-more">Read More →</a>
+            </article>
+            {{/each}}
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Blog. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 
