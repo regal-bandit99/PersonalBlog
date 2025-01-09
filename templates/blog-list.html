@@ -7,16 +7,7 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-container">
-            <a href="/" class="logo">My Blog</a>
-            <div class="nav-links">
-                <a href="/blog">Blog</a>
-                <a href="/about">About</a>
-                <a href="/faq">FAQ</a>
-            </div>
-        </div>
-    </nav>
+    {{> nav}}
 
     <main class="blog-list">
         <h1>Latest Posts</h1>
@@ -35,10 +26,6 @@
         </div>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 My Blog. All rights reserved.</p>
-        </div>
-    </footer>
+    {{> footer}}
 </body>
 </html> 

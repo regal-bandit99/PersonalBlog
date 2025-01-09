@@ -4,14 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "sync-posts": "node scripts/sync-substack.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "gray-matter": "^4.0.3",
-    "marked": "^15.0.6"
+    "html-to-markdown": "^1.0.0",
+    "marked": "^15.0.6",
+    "node-fetch": "^3.3.2",
+    "rss-parser": "^3.13.0"
   }
 }
